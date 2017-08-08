@@ -1,0 +1,796 @@
+
+
+
+
+
+  
+  
+    <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">
+    <html xmlns=\"http://www.w3.org/1999/xhtml\">
+  
+
+
+<head>
+<script type='text/javascript'>var ue_t0=ue_t0||+new Date();</script>
+<script type='text/javascript'>
+var ue_csm = window,
+    ue_hob = +new Date();
+(function(d){var e=d.ue=d.ue||{},f=Date.now||function(){return+new Date};e.d=function(b){return f()-(b?0:d.ue_t0)};e.stub=function(b,a){if(!b[a]){var c=[];b[a]=function(){c.push([c.slice.call(arguments),e.d(),d.ue_id])};b[a].replay=function(b){for(var a;a=c.shift();)b(a[0],a[1],a[2])};b[a].isStub=1}};e.exec=function(b,a){return function(){if(1==window.ueinit)try{return b.apply(this,arguments)}catch(c){ueLogError(c,{attribution:a||"undefined",logLevel:"WARN"})}}}})(ue_csm);
+
+
+    var ue_err_chan = 'jserr-rw';
+(function(d,e){function h(f,b){if(!(a.ec>a.mxe)&&f){a.ter.push(f);b=b||{};var c=f.logLevel||b.logLevel;c&&c!==k&&c!==m&&c!==n&&c!==p||a.ec++;c&&c!=k||a.ecf++;b.pageURL=""+(e.location?e.location.href:"");b.logLevel=c;b.attribution=f.attribution||b.attribution;a.erl.push({ex:f,info:b})}}function l(a,b,c,e,g){d.ueLogError({m:a,f:b,l:c,c:""+e,err:g,fromOnError:1,args:arguments},g?{attribution:g.attribution,logLevel:g.logLevel}:void 0);return!1}var k="FATAL",m="ERROR",n="WARN",p="DOWNGRADED",a={ec:0,ecf:0,
+pec:0,ts:0,erl:[],ter:[],mxe:50,startTimer:function(){a.ts++;setInterval(function(){d.ue&&a.pec<a.ec&&d.uex("at");a.pec=a.ec},1E4)}};l.skipTrace=1;h.skipTrace=1;h.isStub=1;d.ueLogError=h;d.ue_err=a;e.onerror=l})(ue_csm,window);
+
+
+var ue_id = 'Y9T7E903BJ4CX4C306WZ',
+    ue_url = '/ap/uedata',
+    ue_navtiming = 1,
+    ue_mid = 'ATVPDKIKX0DER',
+    ue_sid = '147-6814351-6587662',
+    ue_sn = 'www.amazon.com',
+    ue_furl = 'fls-na.amazon.com',
+    ue_surl = '//unagi-na.amazon.com/1/events/com.amazon.csm.nexusclient.prod',
+    ue_fcsn = 1,
+    ue_urt = 3,
+    ue_rpl_ns = 'cel-rpl',
+    ue_fpf = '//fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:147-6814351-6587662:Y9T7E903BJ4CX4C306WZ$uedata=s:',
+    ue_cel_viz = 1,
+
+    ue_swi = 1;
+function ue_viz(){(function(c,e,a){function k(b){if(c.ue.viz.length<p&&!l){var a=b.type;b=b.originalEvent;/^focus./.test(a)&&b&&(b.toElement||b.fromElement||b.relatedTarget)||(a=e[m]||("blur"==a||"focusout"==a?"hidden":"visible"),c.ue.viz.push(a+":"+(+new Date-c.ue.t0)),"visible"==a&&(ue.isl&&uex("at"),l=1))}}for(var l=0,f,g,m,n=["","webkit","o","ms","moz"],d=0,p=20,h=0;h<n.length&&!d;h++)if(a=n[h],f=(a?a+"H":"h")+"idden",d="boolean"==typeof e[f])g=a+"visibilitychange",m=(a?a+"V":"v")+"isibilityState";
+k({});d&&e.addEventListener(g,k,0);c.ue&&d&&(c.ue.pageViz={event:g,propHid:f})})(ue_csm,document,window)};
+
+(function(a,g){function v(a){return a&&a.replace&&a.replace(/^\s+|\s+$/g,"")}function p(a){return"undefined"===typeof a}function t(d,c,e,h){var g=h||+new Date,m;a.ueam&&a.ueam(c,d,h);if(c||p(e)){if(d)for(m in h=c?f("t",c)||f("t",c,{}):a.ue.t,h[d]=g,e)e.hasOwnProperty(m)&&f(m,c,e[m]);return g}}function f(d,c,e){var f=a.ue,g=c&&c!=f.id?f.sc[c]:f;g||(g=f.sc[c]={});"id"==d&&e&&(f.cfa2=1);return g[d]=e||g[d]}function w(d,c,e,f,g){e="on"+e;var m=c[e];"function"===typeof m?d&&(a.ue.h[d]=m):m=function(){};
+c[e]=g?function(a){f(a);m(a)}:function(a){m(a);f(a)};c[e]&&(c[e].isUeh=1)}function A(d,c,e){function h(c,e){var b=[c],D=0,g={},m,h;e?(b.push("m=1"),g[e]=1):g=a.ue.sc;for(h in g)if(g.hasOwnProperty(h)){var k=f("wb",h),l=f("t",h)||{},q=f("t0",h)||a.ue.t0,n;if(e||2==k){k=k?D++:"";b.push("sc"+k+"="+h);for(n in l)3>=n.length&&!p(l[n])&&null!==l[n]&&b.push(n+k+"="+(l[n]-q));b.push("t"+k+"="+l[d]);if(f("ctb",h)||f("wb",h))m=1}}!x&&m&&b.push("ctb=1");return b.join("&")}function z(c,b,e,d){if(c){var f=a.ue_err,
+h;d&&a.ue.log||(h=new Image,a.ue.iel.push(h),h.src=c);E?a.ue_fpf&&g.encodeURIComponent&&c&&(d=new Image,c=""+a.ue_fpf+g.encodeURIComponent(c)+":"+(+new Date-a.ue_t0),a.ue.iel.push(d),d.src=c):a.ue.log&&(h=g.chrome&&"ul"==b,a.ue.log(c,"uedata",a.ue_svi?{n:1,img:!d&&h?1:0}:{n:1}),a.ue.ielf.push(c));f&&!f.ts&&f.startTimer();a.ue.b&&(f=a.ue.b,a.ue.b="",z(f,b,e,1))}}function m(c){if(!ue.collected){var b=c.timing,e=c.navigation,d=ue.t;b&&(d.na_=b.navigationStart,d.ul_=b.unloadEventStart,d._ul=b.unloadEventEnd,
+d.rd_=b.redirectStart,d._rd=b.redirectEnd,d.fe_=b.fetchStart,d.lk_=b.domainLookupStart,d._lk=b.domainLookupEnd,d.co_=b.connectStart,d._co=b.connectEnd,d.sc_=b.secureConnectionStart,d.rq_=b.requestStart,d.rs_=b.responseStart,d._rs=b.responseEnd,d.dl_=b.domLoading,d.di_=b.domInteractive,d.de_=b.domContentLoadedEventStart,d._de=b.domContentLoadedEventEnd,d._dc=b.domComplete,d.ld_=b.loadEventStart,d._ld=b.loadEventEnd,b=d.na_,c="function"!==typeof c.now||p(b)?0:new Date(b+c.now())-new Date,d.ntd=c+a.ue.t0);
+e&&(d.ty=e.type+a.ue.t0,d.rc=e.redirectCount+a.ue.t0);ue.collected=1}}function s(b){var c=n&&n.navigation?n.navigation.type:y,d=c&&2!=c,e=a.ue.bfini;a.ue.cfa2||(e&&1<e&&(b+="&bfform=1",d||(a.ue.isBFT=e-1)),2==c&&(b+="&bfnt=1",a.ue.isBFT=a.ue.isBFT||1),a.ue.ssw&&a.ue.isBFT&&(p(a.ue.isNRBF)&&(c=a.ue.ssw(a.ue.oid),c.e||p(c.val)||(a.ue.isNRBF=1<c.val?0:1)),p(a.ue.isNRBF)||(b+="&nrbf="+a.ue.isNRBF)),a.ue.isBFT&&!a.ue.isNRBF&&(b+="&bft="+a.ue.isBFT));return b}if(c||p(e)){for(var q in e)e.hasOwnProperty(q)&&
+f(q,c,e[q]);t("pc",c,e);q=f("id",c)||a.ue.id;var b=a.ue.url+"?"+d+"&v="+a.ue.v+"&id="+q,x=f("ctb",c)||f("wb",c),n=g.performance||g.webkitPerformance,k,l;x&&(b+="&ctb="+x);1<a.ueinit&&(b+="&ic="+a.ueinit);!a.ue._fi||"at"!=d||c&&c!=q||(b+=a.ue._fi());if(!("ld"!=d&&"ul"!=d||c&&c!=q)){if("ld"==d){try{g.onbeforeunload&&g.onbeforeunload.isUeh&&(g.onbeforeunload=null)}catch(w){}if(g.chrome)for(l=0;l<ue.ulh.length;l++)B("beforeunload",ue.ulh[l]);(l=document.ue_backdetect)&&l.ue_back&&l.ue_back.value++;a._uess&&
+(k=a._uess());a.ue.isl=1}ue._bf&&(b+="&bf="+ue._bf());a.ue_navtiming&&n&&n.timing&&(f("ctb",q,"1"),1==a.ue_navtiming&&t("tc",y,y,n.timing.navigationStart));n&&m(n);a.ue.t.hob=a.ue_hob;a.ue.t.hoe=a.ue_hoe;a.ue.ifr&&(b+="&ifr=1")}t(d,c,e);e="ld"==d&&c&&f("wb",c);var u;e||q==a.ue.oid||F((f("t",c)||{}).tc||+f("t0",c),+f("t0",c));a.ue_mbl&&a.ue_mbl.cnt&&!e&&(b+=a.ue_mbl.cnt());e?f("wb",c,2):"ld"==d&&(r.lid=v(q));for(u in a.ue.sc)if(1==f("wb",u))break;if(e){if(a.ue.s)return;b=h(b,null)}else l=h(b,null),
+l!=b&&(l=s(l),a.ue.b=l),k&&(b+=k),b=h(b,c||a.ue.id);b=s(b);if(a.ue.b||e)for(u in a.ue.sc)2==f("wb",u)&&delete a.ue.sc[u];k=0;ue._rt&&(b+="&rt="+ue._rt());e||(a.ue.s=0,(k=a.ue_err)&&0<k.ec&&k.pec<k.ec&&(k.pec=k.ec,b+="&ec="+k.ec+"&ecf="+k.ecf),k=f("ctb",c),f("t",c,{}));b&&a.ue.tag&&0<a.ue.tag().length&&(b+="&csmtags="+a.ue.tag().join("|"),a.ue.tag=a.ue.tagC());b&&a.ue.viz&&0<a.ue.viz.length&&(b+="&viz="+a.ue.viz.join("|"),a.ue.viz=[]);b&&!p(a.ue_pty)&&(b+="&pty="+a.ue_pty+"&spty="+a.ue_spty+"&pti="+
+a.ue_pti);b&&a.ue.tabid&&(b+="&tid="+a.ue.tabid);b&&a.ue.aftb&&(b+="&aftb=1");b&&a.ue.sbf&&(b+="&sbf=1");!a.ue._ui||c&&c!=q||(b+=a.ue._ui());a.ue.a=b;z(b,d,k,e)}}function s(a,c,e){e=e||g;e.addEventListener?e.addEventListener(a,c,!!window.ue_clf):e.attachEvent&&e.attachEvent("on"+a,c)}function B(a,c,e){e=e||g;e.removeEventListener?e.removeEventListener(a,c,!!window.ue_clf):e.detachEvent&&e.detachEvent("on"+a,c)}function C(){function d(){a.onUl()}function c(a){return function(){e[a]||(e[a]=1,A(a))}}
+var e=a.ue.r,f,p;a.onLd=c("ld");a.onLdEnd=c("ld");a.onUl=c("ul");f={stop:c("os")};g.chrome?(s("beforeunload",d),ue.ulh.push(d)):f[G]=a.onUl;for(p in f)f.hasOwnProperty(p)&&w(0,g,p,f[p]);a.ue_viz&&ue_viz();s("load",a.onLd);t("ue")}function F(d,c){a.ue_mbl&&a.ue_mbl.ajax&&a.ue_mbl.ajax(d,c);a.ue.tag("ajax-transition")}a.ueinit=(a.ueinit||0)+1;var r={t0:g.aPageStart||a.ue_t0,id:a.ue_id,url:a.ue_url,rid:a.ue_id,a:"",b:"",h:{},r:{ld:0,oe:0,ul:0},s:1,t:{},sc:{},iel:[],ielf:[],fc_idx:{},viz:[],v:"0.831.26",
+d:a.ue&&a.ue.d,log:a.ue&&a.ue.log,clog:a.ue&&a.ue.clog,onflush:a.ue&&a.ue.onflush,onunload:a.ue&&a.ue.onunload,stub:a.ue&&a.ue.stub,lr:a.ue&&a.ue.lr,exec:a.ue&&a.ue.exec,event:a.ue&&a.ue.event,onSushiUnload:a.ue&&a.ue.onSushiUnload,onSushiFlush:a.ue&&a.ue.onSushiFlush,ulh:[],cfa2:0},E=a.ue_fpf?1:0,G="beforeunload",y;r.oid=v(r.id);r.lid=v(r.id);a.ue=r;a.ue._t0=a.ue.t0;a.ue.tagC=function(){var a={};return function(c){c&&(a[c]=1);c=[];for(var e in a)a.hasOwnProperty(e)&&c.push(e);return c}};a.ue.tag=
+a.ue.tagC();a.ue.ifr=g.top!==g.self||g.frameElement?1:0;ue.attach=s;ue.detach=B;ue.reset=function(d,c){d&&(a.ue_cel&&a.ue_cel.reset(),a.ue.t0=+new Date,a.ue.rid=d,a.ue.id=d,a.ue.fc_idx={},a.ue.viz=[])};a.uei=C;a.ueh=w;a.ues=f;a.uet=t;a.uex=A;C()})(ue_csm,window);
+
+
+ue.stub(ue,"log");ue.stub(ue,"onunload");ue.stub(ue,"onflush");
+(function(b){var a=b.ue;a.cv={};a.cv.scopes={};a.count=function(c,b,d){var e={},f=a.cv;e.counter=c;e.value=b;e.t=a.d();d&&d.scope&&(f=a.cv.scopes[d.scope]=a.cv.scopes[d.scope]||{},e.scope=d.scope);if(void 0===b)return f[c];f[c]=b;c=0;d&&d.bf&&(c=1);a.clog&&0===c?a.clog(e,"csmcount",{bf:c}):a.log&&a.log(e,"csmcount",{c:1,bf:c})};a.count("baselineCounter2",1);a&&a.event&&(a.event({requestId:b.ue_id||"rid",server:b.ue_sn||"sn",obfuscatedMarketplaceId:b.ue_mid||"mid"},"csm","csm.CSMBaselineEvent.4"),
+a.count("nexusBaselineCounter",1,{bf:1}))})(ue_csm);
+
+
+var ue_hoe = +new Date();
+</script>
+
+<!-- 303ywhwed78ltd2p7g059glmjw0n4ii0nl1ki2fu0g -->
+  
+  
+
+
+<title>
+    Amazon.com Sign In 
+</title>
+
+  
+
+
+
+
+
+<link  type="text/css" href="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/errors-alerts/error-styles-ssl._CB219086192_.css" rel="stylesheet" />
+
+
+  
+
+
+
+
+
+<link  type="text/css" href="https://images-na.ssl-images-amazon.com/images/G/01/authportal/common/css/ap_global._CB318885489_.css" rel="stylesheet" />
+
+
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+<script type='text/javascript'>
+(function(e,c){function h(b,a){f.push([b,a])}function g(b,a){if(b){var c=e.head||e.getElementsByTagName("head")[0]||e.documentElement,d=e.createElement("script");d.async="async";d.src=b;d.setAttribute("crossorigin","anonymous");a&&a.onerror&&(d.onerror=a.onerror);a&&a.onload&&(d.onload=a.onload);c.insertBefore(d,c.firstChild)}}function k(){ue.uels=g;for(var b=0;b<f.length;b++){var a=f[b];g(a[0],a[1])}ue.deffered=1}var f=[];c.ue&&(ue.uels=h,c.ue.attach&&c.ue.attach("load",k))})(document,window);
+(function(a){var b=a.alert;window.alert=function(){a.ueLogError&&a.ueLogError({message:"[CSM] Alert invocation detected with argument: "+arguments[0],logLevel:"WARN"});Function.prototype.apply.apply(b,[a,arguments||[]])}})(window);
+(function(k,l,g){function m(a){c||(c=b[a.type].id,"undefined"===typeof a.clientX?(e=a.pageX,f=a.pageY):(e=a.clientX,f=a.clientY),2!=c||h&&(h!=e||n!=f)?(r(),d.isl&&l.setTimeout(function(){p("at",d.id)},0)):(h=e,n=f,c=0))}function r(){for(var a in b)b.hasOwnProperty(a)&&d.detach(a,m,b[a].parent)}function s(){for(var a in b)b.hasOwnProperty(a)&&d.attach(a,m,b[a].parent)}function t(){var a="";!q&&c&&(q=1,a+="&ui="+c);return a}var d=k.ue,p=k.uex,q=0,c=0,h,n,e,f,b={click:{id:1,parent:g},mousemove:{id:2,
+parent:g},scroll:{id:3,parent:l},keydown:{id:4,parent:g}};d&&p&&(s(),d._ui=t)})(ue_csm,window,document);
+
+
+
+    if (window.ue && window.ue.uels) {
+                    ue.uels("https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/ClientSideMetricsAUIJavascript-69ab801358dfe32338d0619802ae6aabc188b1bd._V2_.js");
+    }
+
+(function(k,c){function l(a,b){return a.filter(function(a){return a.initiatorType==b})}function f(a,c){if(b.t[a]){var g=b.t[a]-b._t0,e=c.filter(function(a){return 0!==a.responseEnd&&m(a)<g}),f=l(e,"script"),h=l(e,"link"),k=l(e,"img"),n=e.map(function(a){return a.name.split("/")[2]}).filter(function(a,b,c){return a&&c.lastIndexOf(a)==b}),q=e.filter(function(a){return a.duration<p}),s=g-Math.max.apply(null,e.map(m))<r|0;"af"==a&&(b._afjs=f.length);return a+":"+[e[d],f[d],h[d],k[d],n[d],q[d],s].join("-")}}
+function m(a){return a.responseEnd-(b._t0-c.timing.navigationStart)}function n(){var a=c[h]("resource"),d=f("cf",a),g=f("af",a),a=f("ld",a);delete b._rt;b._ld=b.t.ld-b._t0;b._art&&b._art();return[d,g,a].join("_")}var p=20,r=50,d="length",b=k.ue,h="getEntriesByType";b._rre=m;b._rt=c&&c.timing&&c[h]&&n})(ue_csm,window.performance);
+
+(function(l,d){function c(b){b="";var c=a.isBFT?"b":"s",d=""+a.oid,f=""+a.lid,g=d;d!=f&&20==f.length&&(c+="a",g+="-"+f);a.tabid&&(b=a.tabid+"+");b+=c+"-"+g;b!=e&&100>b.length&&(e=b,document.cookie="csm-hit="+b+("|"+ +new Date)+m+"; path=/")}function n(){e=0}function h(b){!0===d[a.pageViz.propHid]?e=0:!1===d[a.pageViz.propHid]&&c({type:"visible"})}var m="; expires="+(new Date(+new Date+6048E5)).toGMTString(),e,a=l.ue||{},k=a.pageViz&&a.pageViz.event&&a.pageViz.propHid;a.attach&&(a.attach("click",c),
+a.attach("keyup",c),k||(a.attach("focus",c),a.attach("blur",n)),k&&(a.attach(a.pageViz.event,h,d),h({})));a.aftb=1})(ue_csm,document);
+
+
+ue_csm.ue.stub(ue,"impression");
+
+
+(function(k,d,h){function f(a,c,b){a&&a.indexOf&&0===a.indexOf("http")&&0!==a.indexOf("https")&&l(s,c,a,b)}function g(a,c,b){a&&a.indexOf&&(location.href.split("#")[0]!=a&&null!==a&&"undefined"!==typeof a||l(t,c,a,b))}function l(a,c,b,e){m[b]||(e=u&&e?n(e):"N/A",d.ueLogError&&d.ueLogError({message:a+c+" : "+b,logLevel:v,stack:"N/A"},{attribution:e}),m[b]=1,p++)}function e(a,c){if(a&&c)for(var b=0;b<a.length;b++)try{c(a[b])}catch(d){}}function q(){return d.performance&&d.performance.getEntriesByType?
+d.performance.getEntriesByType("resource"):[]}function n(a){if(a.id)return"//*[@id='"+a.id+"']";var c;c=1;var b;for(b=a.previousSibling;b;b=b.previousSibling)b.nodeName==a.nodeName&&(c+=1);b=a.nodeName;1!=c&&(b+="["+c+"]");a.parentNode&&(b=n(a.parentNode)+"/"+b);return b}function w(){var a=h.images;a&&a.length&&e(a,function(a){var b=a.getAttribute("src");f(b,"img",a);g(b,"img",a)})}function x(){var a=h.scripts;a&&a.length&&e(a,function(a){var b=a.getAttribute("src");f(b,"script",a);g(b,"script",a)})}
+function y(){var a=h.styleSheets;a&&a.length&&e(a,function(a){if(a=a.ownerNode){var b=a.getAttribute("href");f(b,"style",a);g(b,"style",a)}})}function z(){if(A){var a=q();e(a,function(a){f(a.name,a.initiatorType)})}}function B(){e(q(),function(a){g(a.name,a.initiatorType)})}function r(){var a;a=d.location&&d.location.protocol?d.location.protocol:void 0;"https:"==a&&(z(),w(),x(),y(),B(),p<C&&setTimeout(r,D))}var s="[CSM] Insecure content detected ",t="[CSM] Ajax request to same page detected ",v="WARN",
+m={},p=0,D=k.ue_nsip||1E3,C=5,A=1==k.ue_urt,u=!0;ue_csm.ue_disableNonSecure||(d.performance&&d.performance.setResourceTimingBufferSize&&d.performance.setResourceTimingBufferSize(300),r())})(ue_csm,window,document);
+
+
+if(window.ue&&uet) { uet('bb'); }
+</script></head>
+
+<body id="amzn_kindle" class="ap-locale-en_US" >    <img height="1" width="1" style='display:none;visibility:hidden;' src='//fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:147-6814351-6587662:Y9T7E903BJ4CX4C306WZ$uedata=s:%2Fap%2Fuedata%3Fstaticb%26id%3DY9T7E903BJ4CX4C306WZ:0' alt=""/>
+
+
+<script type='text/javascript'>
+
+(function(){function l(a){for(var c=b.location.search.substring(1).split("&"),e=0;e<c.length;e++){var d=c[e].split("=");if(d[0]===a)return d[1]}}window.amzn=window.amzn||{};amzn.copilot=amzn.copilot||{};var b=window,f=document,g=b.P||b.AmazonUIPageJS,h=f.head||f.getElementsByTagName("head")[0],m=0,n=0;amzn.copilot.checkCoPilotSession=function(){f.cookie.match("cpidv")&&("undefined"!==typeof jQuery&&k(jQuery),g&&g.when&&g.when("jQuery").execute(function(a){k(a)}),b.amznJQ&&b.amznJQ.available&&b.amznJQ.available("jQuery",
+function(){k(jQuery)}),b.jQuery||g||b.amznJQ||q())};var q=function(){m?b.ue&&"function"===typeof b.ue.count&&b.ue.count("cpJQUnavailable",1):(m=1,f.addEventListener?f.addEventListener("DOMContentLoaded",amzn.copilot.checkCoPilotSession,!1):f.attachEvent&&f.attachEvent("onreadystatechange",function(){"complete"===f.readyState&&amzn.copilot.checkCoPilotSession()}))},k=function(a){if(!n){n=1;amzn.copilot.jQuery=a;a=l("debugJS");var c="https:"===b.location.protocol?1:0,e=1;url="/gp/copilot/handlers/copilot_strings_resources.html";
+window.texas&&texas.locations&&(url=texas.locations.makeUrl(url));g&&g.AUI_BUILD_DATE&&(e=0);amzn.copilot.jQuery.ajax&&amzn.copilot.jQuery.ajax({url:url,dataType:"json",data:{isDebug:a,isSecure:c,includeAUIP:e},success:function(a){amzn.copilot.vip=a.serviceEndPoint;amzn.copilot.enableMultipleTabSession=a.isFollowMe;r(a)},error:function(){b.ue.count("cpLoadResourceError",1)}})}},r=function(a){var c=amzn.copilot.jQuery,e=function(){amzn.copilot.setup(c.extend({isContinuedSession:!0},a))};a.CSSUrls&&
+c.each(a.CSSUrls[0],function(a,c){var b=f.createElement("link");b.type="text/css";b.rel="stylesheet";b.href=c;h.appendChild(b)});a.CSSTag&&s(a.CSSTag);if(a.JSUrls){var d=l("forceSynchronousJS"),b=a.JSUrls[0];c.each(b,function(a,c){a===b.length-1?p(c,d,e):p(c,d)})}a.JSTag&&(t(a.JSTag),P.when("CSCoPilotPresenterAsset").execute(function(){e()}))},t=function(a){var c=f.createElement("div");c.innerHTML=a;a=0;for(var b=c.children.length;a<b;a++){var d=f.createElement("script");d.type="text/javascript";
+d.innerHTML=c.children[a].innerHTML;h.appendChild(d)}},s=function(a){var b=f.createElement("div");b.innerHTML=a;a=0;for(var e=b.children.length;a<e;a++)h.appendChild(b.children[a])},p=function(a,b,e){var d=f.createElement("script");d.type="text/javascript";d.src=a;d.async=b?!1:!0;e&&(d.onload=e);h.appendChild(d)}})();
+
+amzn.copilot.checkCoPilotSession();
+
+</script>
+
+
+<!--[if lte IE 5]>
+<div class="ie">
+<![endif]-->
+
+<!--[if IE 6]>
+<div class="ie ie6">
+<![endif]-->
+
+<!--[if IE 7]>
+<div class="ie ie7">
+<![endif]-->
+
+<!--[if IE 8]>
+<div class="ie ie8">
+<![endif]-->
+
+<div id="headerbanner">
+  
+</div>
+
+
+
+
+<div id="wrapper"> 
+
+<div id="navbarTopSlots">
+  
+  
+</div>
+
+<div id="topSlots">
+  <div id="top-0"></div>
+  <div id="top-1">
+
+
+
+
+
+
+<div id="ap_header" class="ap_header">
+  
+    
+    
+      <img src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/amazon-logo._CB192256676_.gif" alt="Amazon.com Logo"/>
+    
+  
+</div>
+</div>
+  <div id="top-2"></div>
+  <div id="top-3"></div>
+  <div id="top-4"></div>
+  <div id="top-5"></div>
+  <div id="top-6"></div>
+  <div id="top-7"></div>
+  <div id="top-8"></div>
+  <div id="top-9"></div>
+  <div id="top-10"></div>
+</div>
+
+<div id="leftSlots">
+  <div id="left-0"></div>
+  <div id="left-1"></div>
+  <div id="left-2"></div>
+  <div id="left-3"></div>
+  <div id="left-4"></div>
+  <div id="left-5"></div>
+  <div id="left-6"></div>
+  <div id="left-7"></div>
+  <div id="left-8"></div>
+  <div id="left-9"></div>
+  <div id="left-10"></div>
+</div>
+<div id="centerSlots">
+  <div id="center-0"></div>
+
+  <div id="title-slot">
+
+
+
+<!--[if lte IE 5]>
+<div class="ie">
+<![endif]-->
+
+<!--[if IE 6]>
+<div class="ie ie6">
+<![endif]-->
+
+<!--[if IE 7]>
+<div class="ie ie7">
+<![endif]-->  
+
+<!--[if IE 8]>
+<div class="ie ie8">
+<![endif]-->  
+    <div id="ap_title_pagelet">
+
+      
+      
+
+      
+      
+    </div>
+<!--[if lte IE 8]>
+</div>
+<![endif]-->	
+	
+</div>
+
+  <div id="message-box-slot">
+
+
+
+
+
+
+
+	
+
+	<div id="message_error" class="message error">
+	    <span></span>
+	    <h6>There was a problem</h6>
+	    <p>
+				 
+        Enter a valid email or mobile number<br />
+				
+	    </p>
+	</div>
+	
+	
+	
+
+	
+	
+
+</div>
+  
+  <div id="center-1"></div>
+  
+   
+  
+    
+    
+    
+    
+    
+    
+      <div id="signin-slot">
+
+
+
+
+
+
+
+
+<script>
+  function cf() {
+    if (typeof window.uet === 'function') {
+      uet('cf');
+    }
+    if (window.embedNotification &&
+      typeof window.embedNotification.onCF === 'function') {
+      embedNotification.onCF();
+    }
+  }
+</script>
+
+
+
+
+  
+
+
+
+
+
+<!--[if lte IE 5]>
+    <div class="ie">
+      <![endif]-->
+
+<!--[if IE 6]>
+    <div class="ie ie6">
+      <![endif]-->
+
+<!--[if IE 7]>
+    <div class="ie ie7">
+      <![endif]-->
+
+<!--[if IE 8]>
+    <div class="ie ie8">
+      <![endif]-->
+
+<form name="signIn" method="POST" id="ap_signin_form" novalidate="novalidate" action="https://www.amazon.com/ap/signin"
+      
+  >
+
+  
+  
+    
+    
+      <input type="hidden" name="appActionToken" value="W9D9wqYRoj2FXiH6j2BdueBUvEVj2BSvsj3D" /><input type="hidden" name="appAction" value="SIGNIN" />
+    
+  
+
+  
+  
+
+
+
+
+
+	 
+		<input type="hidden" name="openid.pape.max_auth_age" value="ape:MA==" />
+	 
+		<input type="hidden" name="openid.return_to" value="ape:aHR0cHM6Ly9raW5kbGUuYW1hem9uLmNvbTo0NDMvYXV0aGVudGljYXRlL2xvZ2luX2NhbGxiYWNrP3djdHg9JTJG" />
+	 
+		<input type="hidden" name="prevRID" value="ape:WTlUN0U5MDNCSjRDWDRDMzA2V1o=" />
+	 
+		<input type="hidden" name="openid.identity" value="ape:aHR0cDovL3NwZWNzLm9wZW5pZC5uZXQvYXV0aC8yLjAvaWRlbnRpZmllcl9zZWxlY3Q=" />
+	 
+		<input type="hidden" name="openid.assoc_handle" value="ape:YW16bl9raW5kbGU=" />
+	 
+		<input type="hidden" name="openid.mode" value="ape:Y2hlY2tpZF9zZXR1cA==" />
+	 
+		<input type="hidden" name="openid.claimed_id" value="ape:aHR0cDovL3NwZWNzLm9wZW5pZC5uZXQvYXV0aC8yLjAvaWRlbnRpZmllcl9zZWxlY3Q=" />
+	 
+		<input type="hidden" name="pageId" value="ape:YW16bl9raW5kbGU=" />
+	 
+		<input type="hidden" name="openid.ns" value="ape:aHR0cDovL3NwZWNzLm9wZW5pZC5uZXQvYXV0aC8yLjA=" />
+	
+
+
+
+
+  <div id="ap_signin1a_pagelet" class="ap_table ap_pagelet">
+
+    
+    <div id="ap_signin1a_pagelet_title" class="ap_row ap_pagelet_title">
+      <h1>Sign In </h1>
+    </div>
+
+    
+
+    
+    <div id="ap_signin1a_email_section_title" class="ap_row ap_section_title">
+      <h2>
+        
+          
+            What is your email (phone for mobile accounts)?
+          
+          
+        
+      </h2>
+    </div>
+
+    
+             
+    
+    <div id="ap_signin1a_email_row" class="ap_row">
+      
+        
+        
+        
+          <span class="ap_col1 ap_bold ap_right ap_no_collapse">
+            <label for="ap_email">
+              
+                    
+                  E-mail or mobile number:
+                
+                
+              
+            </label>
+          </span>
+        
+      
+      
+      
+      <span class="ap_col2 ap_left">
+        <input id="ap_email" name="email" value="yashitmaheshwary@gmail.com" type="email" size="30" maxlength="128" tabindex="1" autocorrect="off" autocapitalize="off" />   
+      </span>
+    </div>
+    
+    <div id="ap_signin_custom_message" class="center clear-both" >
+      
+    </div>
+
+    
+      
+      
+
+        
+        <div id="ap_signin1a_password_section_title" class="ap_row ap_section_title">
+          <h2> Do you have an Amazon.com password? </h2>
+        </div>
+
+        
+        <div id="ap_signin1a_new_cust_radio_row" class="ap_row">
+          <span id="" class="ap_col1 ap_right ap_no_collapse">
+            <input type="radio" onclick="setElementAvailability('ap_password', false);jQuery('#ap_captcha_table').hide();" name="create" id="ap_signin_create_radio" value="1" tabindex="6"  />
+          </span>
+          <span id="" class="ap_col2 bold ap_radio_label">
+            <label for="ap_signin_create_radio">I am a new customer.</label>
+            <div class="small">(you'll create a password later)</div>
+          </span>
+        </div>
+
+        
+        <div id="ap_signin1a_exist_cust_radio_row" class="ap_row">
+          <span class="ap_col1 ap_right" >
+            <input type="radio" name="create" onclick="setElementAvailability('ap_password', true);jQuery('#ap_captcha_table').show();" id="ap_signin_existing_radio" value="0" tabindex="7" checked="checked" />
+          </span>
+          <span class="ap_col2 bold ap_radio_label"><label for="ap_signin_existing_radio">I am a returning customer&#44; <br>and my password is&#58;</label></span>
+        </div>
+
+        
+
+        
+        <div id="ap_signin1a_password_row" class="ap_row">
+          <span class="ap_col1">&nbsp;</span>
+          <span class="ap_col2">
+            <input id="ap_password" name="password" type="password" maxlength="1024" size="20"  tabindex="2" onkeypress="if (typeof(displayCapsWarning) !== 'undefined') { displayCapsWarning(event,'ap_caps_warning', this); }" class="password"/>
+          </span>
+          
+          <span id="ap_caps_warn_span">
+            
+              
+              
+            
+ 
+
+
+<div id="ap_caps_warning" class="ap_caps_warn ap_col3_caps_warn" style="visibility:hidden;"> 
+  <!--[if lt IE 7]>
+  <style type="text/css">
+  .ap_caps_warn {
+    display: none;
+  }
+  </style>
+  <![endif]-->
+  <b>Caps Lock is on.</b> <font color="black">This may cause you <br />to enter your password incorrectly.</font>
+</div>
+
+          </span>
+        </div>
+        
+        <!--[if IE]><![if !IE]><![endif]-->
+          <div id="ap_small_forgot_password_link">
+        <!--[if IE]><![endif]><![endif]-->
+        <!--[if lte IE 6]>
+          <div id="ap_small_forgot_password_link_ie_old" class="ie_old">
+        <![endif]-->
+        <!--[if gte IE 7]>
+           <div id="ap_small_forgot_password_link_ie_new" class="ie_new">
+        <![endif]-->
+            <span class="small" id="ap_small_forgot_password_span">
+              <a href="https://www.amazon.com/ap/forgotpassword?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fkindle.amazon.com%3A443%2Fauthenticate%2Flogin_callback%3Fwctx%3D%252F&prevRID=Y9T7E903BJ4CX4C306WZ&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_kindle&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=amzn_kindle&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"></a>
+            </span>
+          </div>
+      
+    
+
+    
+
+    
+    
+    
+    
+    <div id="ap_signin1a_signin_button_row" class="ap_row">
+      <span class="ap_col1">&nbsp;</span>
+      <span class="ap_col2">
+        
+          
+          
+            <input type="image" src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/buttons/sign-in-secure._CB192194766_.gif" tabindex="5" alt="Continue" id="signInSubmit" value="Continue" onload="cf()"/>
+          
+        
+      </span>
+      <div class="ap_csm_marker" style="display:none;">
+        
+        <script type="text/javascript">if (typeof uet == 'function') { uet('af'); }</script>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <div id="ap_signin1a_forgot_password_row" class="ap_row">
+      <span class="ap_col1">&nbsp;</span>
+      <span class="ap_col2">
+        
+          
+          
+            <a href="https://www.amazon.com/ap/forgotpassword?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fkindle.amazon.com%3A443%2Fauthenticate%2Flogin_callback%3Fwctx%3D%252F&prevRID=Y9T7E903BJ4CX4C306WZ&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_kindle&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=amzn_kindle&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+              Forgot your password?
+            </a>
+          
+        
+      </span>
+    </div>
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  
+</form>
+<!--[if lte IE 8]>
+    </div>
+<![endif]-->
+</div>
+    
+    
+    
+    
+  
+    
+  <div id="center-2"></div>
+  <div id="center-3"></div>
+  <div id="center-4"></div>
+  <div id="center-5"></div>
+  <div id="center-6"></div>
+  <div id="center-7"></div>
+  <div id="center-8"></div>
+  <div id="center-9"></div>
+  <div id="center-10"></div>
+</div>
+
+<div id="rightSlots">
+  <div id="right-0"></div>
+  <div id="right-1"></div>
+  <div id="right-2"></div>
+  <div id="right-3"></div>
+  <div id="right-4"></div>
+  <div id="right-5"></div>
+  <div id="right-6"></div>
+  <div id="right-7"></div>
+  <div id="right-8"></div>
+  <div id="right-9"></div>
+  <div id="right-10"></div>
+</div>
+
+
+
+<div id="bottomSlots">
+  <div id="bottom-1">
+
+
+
+<div id="ap_privacy" class="ap_privacy_footer">
+  <p class="tiny" align="center">
+    <a id="footer_conditions_of_use_URL_link" href="/gp/help/customer/display.html/ref=ap_footer_condition_of_use?ie=UTF8&amp;nodeId=508088" onclick="return amz_js_PopWin(this.href+'&pop-up=1','AmazonHelp','width=340,height=340,resizable=1,scrollbars=1,toolbar=1,status=1');" target="AmazonHelp" >Conditions of Use</a>
+    <a id="footer_privacy_notice_URL_link" href="/gp/help/customer/display.html/ref=ap_footer_privacy_notice?ie=UTF8&amp;nodeId=468496" onclick="return amz_js_PopWin(this.href+'&pop-up=1','AmazonHelp','width=340,height=340,resizable=1,scrollbars=1,toolbar=1,status=1');" target="AmazonHelp" >Privacy Notice</a>
+    
+    <br>
+    <span id="ap_footer_copyright">© 1996-2017, Amazon.com, Inc. or its affiliates</span>
+  </p>
+</div>
+</div>
+  <div id="bottom-2"></div>
+  <div id="bottom-3"></div>
+  <div id="bottom-4"></div>
+  <div id="bottom-5"></div>
+  <div id="bottom-6"></div>
+  <div id="bottom-7"></div>
+  <div id="bottom-8"></div>
+  <div id="bottom-9"></div>
+  <div id="bottom-10"></div>  
+</div>
+
+<div id="footerSlots">
+  <div id="footer-1"></div><!-- footer-1 -->
+  <div id="footer-2"></div><!-- footer-2 -->
+  <div id="footer-3"></div><!-- footer-3 -->
+  <div id="footer-4"></div><!-- footer-4 -->
+  <div id="footer-5"></div><!-- footer-5 -->
+  <div id="footer-6"></div><!-- footer-6 -->
+  <div id="footer-7"></div><!-- footer-7 -->
+  <div id="footer-8"></div><!-- footer-8 -->
+  <div id="footer-9"></div><!-- footer-9 -->
+  <div id="footer-10"></div><!-- footer-10 -->
+    
+</div><!-- footerSlots -->
+
+<div id="navbarBottomSlots">
+  
+   
+</div>
+
+
+
+<script type="text/javascript">
+(function() {
+try {
+  if ( ue && ue.tag && window.performance.getEntriesByType ) {
+    var t = window.performance.getEntriesByType('resource');
+    if ( t ) {
+      var d = 0;
+      for ( var i = 0; i < t.length; i++ )
+        if ( t[i].duration > d ) d = t[i].duration;
+      ue.tag('ap-rt-' + Math.ceil(d / 100) * 100);
+    }
+  }
+}
+catch (e) {}
+})();
+</script>
+
+
+<div id="javascriptSlots">
+
+<div id="javascript-slot-0">
+
+
+
+
+  
+  
+  
+    <script src="https://images-na.ssl-images-amazon.com/images/G/01/javascripts/lib/jquery/jquery-1.2.6.min._CB253690767_.js" type="text/javascript"></script>
+  
+
+
+</div>
+<div id="javascript-slot-1"></div>
+<div id="javascript-slot-2"></div>
+<div id="javascript-slot-3"></div>
+<div id="javascript-slot-4"></div>
+
+<div id="javascript-identity">
+
+
+
+
+  
+  
+  
+    <script src="https://images-na.ssl-images-amazon.com/images/G/01/authportal/common/js/ap_global-1.1._CB306317608_.js" type="text/javascript"></script>
+  
+
+
+</div>
+<div id="javascript-slot-5"></div>
+<div id="javascript-slot-6"></div>
+
+<div id="js-trms">
+
+
+
+
+<script id="fwcim-script" crossorigin="anonymous" type="text/javascript" src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/login/fwcim._CB509002374_.js"></script>
+<script type="text/javascript">
+if (typeof fwcim != "undefined") {
+
+fwcim.useMercury('https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/login/mercury9._CB372126632_.swf')
+
+
+
+
+fwcim.profile();
+
+}
+</script>
+</div>
+
+<div id="cache-1"></div>
+<div id="cache-2"></div>
+</div><!-- javascriptSlots -->
+
+</div> <!-- end  div  wrapper -->
+<!--[if lte IE 8]>
+</div>
+<![endif]-->
+
+<div id='be' style="display:none;visibility:hidden;"><form name='ue_backdetect' action="get"><input type="hidden" name='ue_back' value='1' /></form>
+
+
+    <script type="text/javascript">
+var ue_mbl=ue_csm.ue.exec(function(e,a){function k(f){b=f||{};a.AMZNPerformance=b;b.transition=b.transition||{};b.timing=b.timing||{};e.ue.exec(l,"csm-android-check")()&&b.tags instanceof Array&&(f=-1!=b.tags.indexOf("usesAppStartTime")||b.transition.type?!b.transition.type&&-1<b.tags.indexOf("usesAppStartTime")?"warm-start":void 0:"view-transition",f&&(b.transition.type=f));"reload"===d._nt&&e.ue_orct||"intrapage-transition"===d._nt?a.performance&&performance.timing&&performance.timing.navigationStart?
+b.timing.transitionStart=a.performance.timing.navigationStart:delete b.timing.transitionStart:"undefined"===typeof d._nt&&a.performance&&performance.timing&&performance.timing.navigationStart&&a.history&&"function"===typeof a.History&&"object"===typeof a.history&&history.length&&1!=history.length&&(b.timing.transitionStart=a.performance.timing.navigationStart);f=b.transition;var c;c=d._nt?d._nt:void 0;f.subType=c;a.ue&&a.ue.tag&&a.ue.tag("has-AMZNPerformance");d.isl&&a.uex&&uex("at","csm-timing");
+m()}function n(b){a.ue&&a.ue.count&&a.ue.count("csm-cordova-plugin-failed",1)}function l(){return a.webclient&&"function"===typeof a.webclient.getRealClickTime?a.cordova&&a.cordova.platformId&&"ios"==a.cordova.platformId?!1:!0:!1}function m(){try{P.register("AMZNPerformance",function(){return b})}catch(a){}}function g(){if(!b)return"";ue_mbl.cnt=null;var a=b.transition,c;c=b.timing.transitionStart;c="undefined"!==typeof c&&"undefined"!==typeof h?c-h:void 0;a=["mts",c,"mtt",a.type,"mtst",a.subType,
+"mtlt",a.launchType];c="";for(var d=0;d<a.length;d+=2){var e=a[d],g=a[d+1];"undefined"!==typeof g&&(c+="&"+e+"="+g)}return c}function p(a,c){b&&(h=c,b.timing.transitionStart=a,b.transition.type="view-transition",b.transition.subType="ajax-transition",b.transition.launchType="normal",ue_mbl.cnt=g)}var d=e.ue||{},h=e.ue_t0,b;if(a.P&&a.P.when&&a.P.register)return a.P.when("CSMPlugin").execute(function(a){a.buildAMZNPerformance&&a.buildAMZNPerformance({successCallback:k,failCallback:n})}),{cnt:g,ajax:p}},
+"mobile-timing")(ue_csm,window);
+
+(function(d){d._uess=function(){var a="";screen&&screen.width&&screen.height&&(a+="&sw="+screen.width+"&sh="+screen.height);var b=function(a){var b=document.documentElement["client"+a];return"CSS1Compat"===document.compatMode&&b||document.body["client"+a]||b},c=b("Width"),b=b("Height");c&&b&&(a+="&vw="+c+"&vh="+b);return a}})(ue_csm);
+
+(function(a){var b=document.ue_backdetect;b&&b.ue_back&&a.ue&&(a.ue.bfini=b.ue_back.value);a.uet&&a.uet("be");a.onLdEnd&&(window.addEventListener?window.addEventListener("load",a.onLdEnd,!1):window.attachEvent&&window.attachEvent("onload",a.onLdEnd));a.ueh&&a.ueh(0,window,"load",a.onLd,1);a.ue&&a.ue.tag&&(a.ue_furl&&a.ue_furl.split?(b=a.ue_furl.split("."))&&b[0]&&a.ue.tag(b[0]):a.ue.tag("nofls"))})(ue_csm);
+(function(g,h){function d(a,d){var b={};if(!e||!f)try{var c=h.sessionStorage;c?a&&("undefined"!==typeof d?c.setItem(a,d):b.val=c.getItem(a)):f=1}catch(g){e=1}e&&(b.e=1);return b}var b=g.ue||{},a="",f,e,c,a=d("csmtid");f?a="NA":a.e?a="ET":(a=a.val,a||(a=b.oid||"NI",d("csmtid",a)),c=d(b.oid),c.e||(c.val=c.val||0,d(b.oid,c.val+1)),b.ssw=d);b.tabid=a})(ue_csm,window);
+ue_csm.ue.exec(function(e,f){var a=e.ue||{},b=a._wlo,d;if(a.ssw){d=a.ssw("CSM_previousURL").val;var c=f.location,b=b?b:c&&c.href?c.href.split("#")[0]:void 0;c=(b||"")===a.ssw("CSM_previousURL").val;!c&&b&&a.ssw("CSM_previousURL",b);d=c?"reload":d?"intrapage-transition":"first-view"}else d="unknown";a._nt=d},"NavTypeModule")(ue_csm,window);
+
+
+(function(b,c){var a=c.images;a&&a.length&&b.ue.count("totalImages",a.length)})(ue_csm,document);
+
+
+ue_csm.ue._rtn = 1;
+(function(e,f){function h(a){a=a.split("?")[0]||a;a=a.replace("http://","").replace("https://","").replace("resource://","").replace("res://","").replace("undefined://","").replace("chrome://","").replace(/\*/g,"").replace(/!/g,"").replace(/~/g,"");var b=a.split("/");a=a.substr(a.lastIndexOf("/")+1);b.splice(-1);b=b.map(function(a){c[a]||(c[a]=(k++).toString(36));return c[a]});b.push(a);return b.join("!")}function l(){return f.getEntriesByType("resource").filter(function(a){return d._rre(a)<d._ld}).sort(function(a,
+b){return a.responseEnd-b.responseEnd}).splice(0,m).map(function(a){var b=[],c;for(c in a)g[c]&&a[c]&&b.push(g[c]+Math.max(a[c]|0,-1).toString(36));b.push("i"+a.initiatorType);(1==d._rtn&&d._afjs>n||2==d._rtn)&&b.push("n"+h(a.name));return b.join("_")}).join("*")}function p(){var a="pm",b;for(b in c)c.hasOwnProperty(b)&&(a+="*"+c[b]+"_"+b);return a}function q(){d.log({k:"rtiming",value:l()+"~"+p()},"csm")}if(f&&f.getEntriesByType&&Array.prototype.map&&Array.prototype.filter&&e.ue&&e.ue.log){var g=
+{connectStart:"c",connectEnd:"C",domainLookupStart:"d",domainLookupEnd:"D",duration:"z",fetchStart:"f",redirectStart:"r",redirectEnd:"R",requestStart:"q",responseStart:"s",responseEnd:"S",startTime:"a"},d=e.ue,c={},k=1,n=20,m=200;d&&d._rre&&(d._art=function(){d._ld&&window.setTimeout(q,0)})}})(ue_csm||{},window.performance);
+
+
+(function(c,d){var b=c.ue,a=d.navigator;b&&b.tag&&a&&(a=a.connection||a.mozConnection||a.webkitConnection)&&a.type&&b.tag("netInfo:"+a.type)})(ue_csm,window);
+
+
+(function(c,d){function h(a,b){for(var c=[],d=0;d<a.length;d++){var e=a[d],f=b.encode(e);if(e[k]){var g=b.metaSep,e=e[k],l=b.metaPairSep,h=[],m=void 0;for(m in e)e.hasOwnProperty(m)&&h.push(m+"="+e[m]);e=h.join(l);f+=g+e}c.push(f)}return c.join(b.resourceSep)}function s(a){var b=a[k]=a[k]||{};b[t]||(b[t]=c.ue_mid);b[u]||(b[u]=c.ue_sid);b[f]||(b[f]=c.ue_id);b.csm=1;a="//"+c.ue_furl+"/1/"+a[v]+"/1/OP/"+a[w]+"/"+a[x]+"/"+h([a],y);if(n)try{n.call(d[p],a)}catch(g){c.ue.sbf=1,(new Image).src=a}else(new Image).src=
+a}function q(){g&&g.isStub&&g.replay(function(a,b,c){a=a[0];b=a[k]=a[k]||{};b[f]=b[f]||c;s(a)});l.impression=s;g=null}if(!(1<c.ueinit)){var k="metadata",x="impressionType",v="foresterChannel",w="programGroup",t="marketplaceId",u="session",f="requestId",p="navigator",l=c.ue||{},n=d[p]&&d[p].sendBeacon,r=function(a,b,c,d){return{encode:d,resourceSep:a,metaSep:b,metaPairSep:c}},y=r("","?","&",function(a){return h(a.impressionData,z)}),z=r("/",":",",",function(a){return a.featureName+":"+h(a.resources,
+A)}),A=r(",","@","|",function(a){return a.id}),g=l.impression;n?q():(l.attach("load",q),l.attach("beforeunload",q));d.P&&d.P.register&&d.P.register("impression-client",function(){})}})(ue_csm,window);
+
+
+
+
+var ue_pty = "AuthenticationPortal";
+
+var ue_spty = "SignInApplication";
+
+
+
+var ue_adb = 4;
+var ue_adb_rtla = 1;
+ue_csm.ue.exec(function(u,a){function q(){b=f;g();if(h)try{d.setItem(k,b)}catch(a){}}function r(){b=1===a.ue_adb_chk?m:f;g();if(h)try{d.setItem(k,b)}catch(c){}}function g(){l.tag(b);l.isl&&a.uex&&uex("at",b);c&&0<c.ec?n():a.ue_adb_rtla&&c&&(c.elh=n)}function n(){a.ue_adb_rtla&&c&&0<c.ec&&!1===p&&(c.elh=null,ueLogError({m:"Hit Info"},{logLevel:"INFO",adb:b}),p=!0)}var l=a.ue,f="adblk_yes",m="adblk_no",s=a.ue_adb_url||"https://m.media-amazon.com/images/G/01/csm/showads.v2.js",b="adblk_unk",d;a:{try{d=
+a.localStorage;break a}catch(v){}d=void 0}var k="csm:adb",e=a.ue_adb,c=a.ue_err,h=d&&(3===e||4===e||5===e),e=4!==e&&5!==e,p=!1,t=function(){if(d&&h){var a;a:{try{a=d.getItem(k);break a}catch(c){}a=void 0}if(a)return b=a,!0}return!1}();e||!t?l.uels(s,{onerror:q,onload:r}):g();a.ue_isAdb=function(){return b};a.ue_isAdb.unk="adblk_unk";a.ue_isAdb.no=m;a.ue_isAdb.yes=f},"adb")(document,window);
+
+
+
+
+
+
+
+
+
+</script>
+
+</div>
+
+<noscript>
+    <img height="1" width="1" style='display:none;visibility:hidden;' src='//fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:147-6814351-6587662:Y9T7E903BJ4CX4C306WZ$uedata=s:%2Fap%2Fuedata%3Fnoscript%26id%3DY9T7E903BJ4CX4C306WZ:0' alt=""/>
+</noscript>
+</body>
+</html>

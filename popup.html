@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amazon Inventory Tracker</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function makeRequest() {
+			var search_query = document.getElementById("search_q").value;
+			var url = "http://127.0.0.1:5000/";
+			var final_url = url.concat(search_query);
+			var xhttp;
+			xhttp=new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					cFunction(this);
+				}
+			};
+			xhttp.open("GET", final_url, true);
+			xhttp.send();
+			
+			// var xmlHttp = new XMLHttpRequest();
+			// xmlHttp.open("GET",final_url,true);
+			// // xmlHttp.setRequestHeader("Access-Control-Allow-Origin:", "");
+			// xmlHttp.send(null);
+
+			var jsonObj = JSON.parse(xhttp.responseText);
+			document.write("<ul>");
+			for (var key in jsonObj) {
+				document.write("<li>" + key + " <b>"+jsonObj[key]+"</b> </li>");
+			}
+			document.write("</ul>");	
+
+			return xhttp.responseText;
+		}
+	</script>
+	<input type="text" name="search_query" id="search_q" />
+	<button type="submit" onclick="makeRequest()">Submit</button
+></body>
+</html>
